@@ -1,0 +1,11 @@
+.notFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.notFound h1 {
+  font-size: 10em;
+}

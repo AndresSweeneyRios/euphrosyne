@@ -1,0 +1,3 @@
+[submodule "simple_webrtc"]
+	path = simple_webrtc
+	url = https://github.com/AndresSweeneyRios/simple_webrtc.git
