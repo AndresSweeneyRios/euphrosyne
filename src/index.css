@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: "Go Wild", sans-serif;
 }
 
 :root {
@@ -17,7 +17,8 @@
   font-size: 14px;
 }
 
-:root::before {
+:root::before, 
+:root::after {
   position: fixed;
   top: 0;
   left: 0;
@@ -31,15 +32,6 @@
 }
 
 :root::after {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  content: "";
-  width: 100%;
-  height: 100vh;
-  background: url(./assets/background.webp) center center / cover no-repeat; 
-  opacity: 0.2;
   animation: rotateHue 17s ease-in-out infinite;
 }
 
@@ -61,75 +53,4 @@
 :root, body, .root {
   width: 100%;
   min-height: 100vh;
-}
-
-button {
-  border: 0;
-  /* border: 1px solid rgba(255, 255, 255, 0.2); */
-  outline: none;
-  padding: 0.5em;
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.05);
-  color: white;
-  font-weight: 600;
-  text-transform: uppercase;
-  background-repeat: repeat;
-  background-position: center;
-  animation: scroll 1.5s linear infinite;
-  animation-duration: 2.4s;
-  transition: animation-duration 2s ease-in-out;
-  
-  /* color: #7e7e7e; */
-  
-  background-color: black;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%236c6b6e' fill-opacity='0.8'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
-}
-
-button[is-disabled], button:disabled {
-  animation-play-state: paused;
-}
-
-/* scroll seamlessly and infinitely right and up (up = 50% speed) */
-@keyframes scroll {
-  0% {
-    background-position: 0 50%;
-  }
-  100% {
-    background-position: 80px 50%;
-  }
-}
-
-button:hover {
-  color: black;
-  background-color: white;
-  /* animation-duration: 1.3s;
-  animation-direction: reverse; */
-  background-image: none;
-}
-
-input {
-  outline: 0;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background-color: rgba(255, 255, 255, 0.05);
-  color: white;
-  padding: 0.5em;
-  transition: background-color 0.05s ease-in-out;
-}
-
-input:hover, input:focus {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-button, input {
-  border-radius: 0.05em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-}
-
-@media (max-width: 500px) {
-  :root {
-    font-size: 10px;
-  }
 }

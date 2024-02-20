@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 const config = defineConfig({
   build: {
     target: 'esnext',
-    assetsInlineLimit: 4096 * 1024,
+    assetsInlineLimit: 100,
   },
   preview: {
     port: 3000,

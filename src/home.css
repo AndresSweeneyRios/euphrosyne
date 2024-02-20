@@ -9,8 +9,8 @@
   padding: 8em 0;
 }
 
-.home svg {
-  width: 25em;
+.home > svg {
+  width: 17em;
 }
 
 .home .social {
@@ -40,9 +40,19 @@
 }
 
 .home h1 {
-  font-family: "Go Wild", "Atkinson Hyperlegible", sans-serif;
+  font-size: 3em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -0.5em;
+  font-weight: 400;
+  margin-bottom: -0.5em
+}
+
+.home h2 {
+  font-family: "Go Wild", sans-serif;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
+  font-weight: 400;
 }
 
 @media (max-width: 700px) {

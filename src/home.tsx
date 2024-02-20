@@ -1,7 +1,6 @@
 import React from "react"
 import SVG from "react-inlinesvg"
 import LogoSVG from "./assets/logo_optimized.svg"
-import InstagramSVG from "./assets/instagram.svg"
 import InstagramRaster from "./assets/instagram.webp"
 import TelegramSVG from "./assets/telegram.svg"
 import DiscordSVG from "./assets/discord.svg"
@@ -11,8 +10,9 @@ import "./home.css"
 export const Home: React.FC = () => {
   return (
     <div className="home">
-      <SVG src={LogoSVG} />
-      <h1>Disruption • Community • Euphoria</h1>
+      <SVG src={LogoSVG} aria-label="Logo" />
+      <h1>Euphrosyne<br/>Collective</h1>
+      <h2>Disruption • Community • Euphoria</h2>
       <div className="social">
         <a href="https://discord.com/invite/YqTmFxz4P4" title="Discord">
           <SVG src={DiscordSVG} />
