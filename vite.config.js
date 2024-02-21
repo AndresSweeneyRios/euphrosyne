@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite'
+import { viteSingleFile } from "vite-plugin-singlefile"
 
-const config = defineConfig({
+const config = defineConfig({ 
+  plugins: [viteSingleFile()],
   build: {
     target: 'esnext',
     assetsInlineLimit: 100,
@@ -12,6 +14,9 @@ const config = defineConfig({
     cors: false,
     proxy: {
     },
+  },
+  css: {
+    transformer: 'lightningcss',
   }
 })
 

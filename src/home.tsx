@@ -1,7 +1,7 @@
 import React from "react"
 import SVG from "react-inlinesvg"
 import LogoSVG from "./assets/logo_optimized.svg"
-import InstagramRaster from "./assets/instagram.webp"
+import InstagramRaster from "./assets/instagram_tiny.webp"
 import TelegramSVG from "./assets/telegram.svg"
 import DiscordSVG from "./assets/discord.svg"
 

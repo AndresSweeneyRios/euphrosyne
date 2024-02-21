@@ -1,7 +1,7 @@
 /* importing Go Wild font */
 @font-face {
   font-family: "Go Wild";
-  src: url(./assets/go_wild.ttf);
+  src: url(./assets/go_wild-subset.ttf);
 }
 
 * {
@@ -26,7 +26,7 @@
   content: "";
   width: 100%;
   height: 100vh;
-  background: url(./assets/background.webp) center center / cover no-repeat; 
+  background: url(./assets/background_tiny.webp) center center / cover no-repeat; 
   opacity: 0.2;
   animation: rotateHue 10s ease-in-out infinite;
 }
